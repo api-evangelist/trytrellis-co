@@ -1,25 +1,65 @@
 aid: trytrellis-co
+
 name: Trellis
-description: 'Trellis is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by general-catalyst) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://miradasqueimpactan.com.co/wp-content/uploads/2026/06/sunwin-danh-gia-toan-dien-cong-game-giai-tri-hang-dau-2026.webp
+
+description: 'Trellis provides a low-code platform that enables businesses to build, integrate, and automate workflows across various services. The platform offers a visual interface, pre-built connectors, and robust API management tools, allowing developers to create custom integrations quickly. Backed by General Catalyst, Trellis focuses on simplifying complex data pipelines and enhancing operational efficiency for enterprises across multiple industries.'
+
 url: https://raw.githubusercontent.com/api-evangelist/trytrellis-co/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Low-code
+- Integration
+- Automation
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- general-catalyst
+
 common:
+- type: Vendors
+  url: vendors/trytrellis-co-vendors.yml
+- type: Hosts
+  url: hosts/trytrellis-co-hosts.yml
 - type: Website
   url: https://www.trytrellis.co/
+- type: DomainSecurity
+  url: security/trytrellis-co-domain-security.yml
+
+apis: []
+
+x-backed-by:
+- general-catalyst
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: The domain trytrellis.co redirects to an unrelated gaming site with no API documentation.
+  evidence:
+    - url: https://trytrellis.co
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

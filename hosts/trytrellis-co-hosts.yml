@@ -1,0 +1,53 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.com.co
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.co
+  role: api
+  relation: other-domain
+- host: api.trytrellis.co
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: trytrellis.co
+  role: api
+  relation: own
+- host: miradasqueimpactan.com.co
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: miradasqueimpactan.com.co
+  role: other
+  relation: other-domain
+- host: www.trytrellis.co
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: trytrellis.co
+  role: website
+  relation: own
